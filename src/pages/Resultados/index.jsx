@@ -22,15 +22,15 @@ const Resultados = () => {
     const question2Data = data.filter((row) => row.question === 2);
     const question2Totals = [
         {
-            name: "Comidas calinetes",
+            name: "16 a 21",
             value: question2Data.filter(row => row.option === 1).length
         },
         {
-            name: "Dormir",
+            name: "21 a 50",
             value: question2Data.filter(row => row.option === 2).length
         },
         {
-            name: "El frio",
+            name: "50 +",
             value: question2Data.filter(row => row.option === 3).length
         },
 
@@ -38,7 +38,7 @@ const Resultados = () => {
     return (<section>
         <article>
             <h2>Resultados</h2>
-            <h2>Team Invierno?</h2>
+            <h2>Vas a Votar en las PASO 2023</h2>
             <PieChart width={600} height={600}>
                 <Pie data={question1Totals}
                     dataKey="value"
@@ -53,7 +53,7 @@ const Resultados = () => {
         </article>
         <article>
             <h2>
-                Si tu respuesta es si, Que te gusta del Invierno?
+                Edad
             </h2>
             <BarChart
                 width={400} height={400}
