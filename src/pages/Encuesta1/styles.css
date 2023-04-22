@@ -1,0 +1,32 @@
+
+#poll {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#poll>*{
+    background-color: aliceblue;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.row{
+    display:flex;
+    flex-direction: column;
+}
+
+.check{
+    flex-direction: row;
+    justify-content: space-between;
+}
+datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    }
+
+option {
+    padding: 0;
+}  
